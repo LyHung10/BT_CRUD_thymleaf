@@ -2,11 +2,6 @@
 <html xmlns:th="http://www.thymeleaf.org"
 	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 
-<head>
-<title>My Page Title</title>
-<!-- Include your CSS and JavaScript here -->
-</head>
-
 <body>
 
 	<header class="row">
@@ -14,7 +9,8 @@
 			<div th:replace="~{admin/fragments/header :: header}"></div>
 		</div>
 	</header>
-
+	<br>
+	
 	<main class="container">
 		<section class="row mt-4">
 			<div class="col mt-5 mb-5">
@@ -22,7 +18,8 @@
 			</div>
 		</section>
 	</main>
-
+	
+	<br>
 	<footer class="row">
 		<div class="col">
 			<div th:replace="~{admin/fragments/footer :: footer}"></div>
