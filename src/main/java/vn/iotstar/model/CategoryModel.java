@@ -8,23 +8,21 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
-
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class CategoryModel implements Serializable{
+public class CategoryModel implements Serializable {
 
-	private static final long serialVersionUID = -8461866003837509395L;
-	
+	private static final long serialVersionUID = -2222348905775683039L;
+
 	@Id
 	private Long id;
-	
+
 	@NotEmpty(message = "Không được bỏ trống")
 	private String name;
 	private String images;
 	private int status;
-	
+
 	private Boolean isEdit = false;
 
 	public Long getId() {
@@ -69,6 +67,5 @@ public class CategoryModel implements Serializable{
 
 	public CategoryModel() {
 	}
-	
-	
+
 }

@@ -1,4 +1,5 @@
 package vn.iotstar.services;
+
 import java.util.List;
 import java.util.Optional;
 
@@ -11,9 +12,8 @@ import org.springframework.stereotype.Service;
 import vn.iotstar.entity.Category;
 import vn.iotstar.respository.CategoryRepository;
 
-
 @Service
-public class CategoryServiceImpl implements CategoryService{
+public class CategoryServiceImpl implements CategoryService {
 	@Autowired
 	CategoryRepository categoryRepository;
 
@@ -56,8 +56,6 @@ public class CategoryServiceImpl implements CategoryService{
 		return categoryRepository.findById(id);
 	}
 
-	
-
 	@Override
 	public void deleteById(Long id) {
 		categoryRepository.deleteById(id);
@@ -65,11 +63,7 @@ public class CategoryServiceImpl implements CategoryService{
 
 	@Override
 	public long count() {
-		// TODO Auto-generated method stub
-		return 0;
+		return categoryRepository.count();
 	}
-	
-	
-	
 
 }
